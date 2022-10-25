@@ -1,0 +1,141 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: hsl(0, 0%, 95%);
+  display: flex;
+  align-items: center;
+  margin: auto;
+  font-size: 15px;
+  min-height: 100vh;
+  
+  
+
+}
+main{
+  display: flex;
+  /* align-items: center; */
+  margin: auto;
+  flex-direction: row;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  max-width: 960px;
+  overflow: hidden;
+  
+}
+
+.wrapper{
+  display: flex;
+  border-radius: 12px;
+  margin: 2rem;
+  overflow: hidden;
+}
+img{
+  height: 50px;
+  width: 100px;
+}
+
+
+.boxone{
+  background-color: hsl(31, 77%, 52%); 
+ 
+  
+}
+.boxtwo{
+  background-color: hsl(184, 100%, 22%);
+  
+}
+.boxthree{
+  background-color: hsl(179, 100%, 13%);
+  
+  
+}
+.box{
+
+  padding: 40px;
+}
+h2{
+  padding-top: 30px;
+  padding-bottom: 20px;
+  font-size: 30PX;
+  color: hsl(0, 0%, 95%);
+font-family:"https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap";
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 700;
+}
+p{
+  color: hsl(0, 0%, 95%);
+  line-height: 1.6;
+font-family: "https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap";
+font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+}
+button{
+  margin-top: 60px;
+  padding: 13px 27px ;
+  border-radius: 26px;
+  text-decoration: none;
+  background-color: hsl(0, 0%, 95%);
+border: solid;
+  border-color: hsl(0, 0%, 95%)
+  
+}
+
+
+.sedanbtn{
+  color: hsl(31, 77%, 52%);
+}
+.suvbtn{
+  color: hsl(184, 100%, 22%);
+  
+}
+.luxurybtn{
+  color: hsl(179, 100%, 13%);
+}
+button:hover{
+  cursor: pointer;}
+.sedanbtn:hover{
+background: hsl(31, 77%, 52%);
+color: hsl(0, 0%, 95%);
+}
+.suvbtn:hover{
+background: hsl(184, 100%, 22%);
+color: hsl(0, 0%, 95%);
+}
+.luxurybtn:hover{
+background: hsl(179, 100%, 13%);
+color: hsl(0, 0%, 95%);
+}
+@media screen and (max-width:1440px) {
+ .wrapper{
+  flex-direction: row;
+ }
+  
+}
+
+@media screen and (max-width:375px) {
+  
+  .wrapper{
+      flex-direction: column;
+  }
+a:hover{
+  background-color: none;
+  border-radius: 0;
+  font-size: 10px;
+}
+}
+a{
+text-decoration: none;
+padding: 2rem;
+font-size:15px;
+}
+a:hover{
+color: white;
+border-radius: 20px;
+background: black;
+font-size: 20px;
+}

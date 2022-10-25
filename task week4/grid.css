@@ -1,0 +1,72 @@
+*{
+    margin:0;
+    padding: 0;
+    
+    }
+    body{
+        background-color: black;
+    }
+    
+    .container{
+        display: grid;
+    grid-template-areas: 
+    "a a a a b b"
+    "a a a a b b"
+    "c c c d d d"
+    "c c c e e e"
+    ;
+        grid-auto-rows: minmax(100px,auto);
+        gap: 10px;
+        width: 30%;
+        height: 30%;
+        padding: 15px;
+        margin: auto;
+        size: 30%;
+        margin-top: 150px;
+    
+    }
+    .one{
+        background-color: orangered;
+        grid-area: a;
+    }
+    .two{
+        background-color: rgb(226, 171, 19);
+        grid-area: b;
+    }
+    .three{
+        background-color: rgb(43, 153, 43);
+        grid-area: c;
+    }
+    .four{
+        background-color: rgb(29, 129, 187);
+        grid-area: d;
+    }
+    .five{
+        background-color: rgb(29, 129, 187);
+        grid-area: e;
+    }
+    
+     @media screen and(max-width:1000px) { 
+        .container{
+         display: grid;
+          grid-template-areas: 
+           "a a a a b b"
+           "a a a a b b"
+           "c c c d d d"
+           "c c c e e e"
+    ;
+        }
+    }
+    @media screen and (max-width:375px) {
+        .container{
+            display: grid;
+          grid-template-areas:
+            "a"
+            "b"
+            "c"
+            "d"
+            "e";   
+        }
+        
+    } 
+    
